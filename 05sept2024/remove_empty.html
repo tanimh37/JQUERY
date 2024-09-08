@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .paral{
+            font-size: 26px;
+            font-size: medium;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+<div class="paral">Div with class</div>
+<div class="">Div without class</div>
+
+
+<button id="rmv">Remove</button> <br> <button id="emt">Empty</button>
+    <script>
+        $(function () {
+            $("#rmv").click(function(){
+                $("div").remove(".paral");
+            })
+            $("#emt").click(function(){
+                $("div").empty();
+            })
+        });
+    </script>
+</body>
+
+</html>
